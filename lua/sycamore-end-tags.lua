@@ -1,6 +1,10 @@
 local tsutils = require'nvim-treesitter.ts_utils'
 local set = {}
 
+set.setup = function()
+	require'sycamore-end-tags'.test()
+end
+
 set.test = function()
 	local function i(value)
 		print(vim.inspect(value))
